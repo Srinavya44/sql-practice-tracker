@@ -34,7 +34,7 @@ label { font-weight: 600; }
 """, unsafe_allow_html=True)
 
 st.title("💡 SQL Practice")
-st.caption("Select a question, write a query, run it, and save your practiced queries. No answers shown beforehand.")
+st.caption("Select a question, write a query, run it, and save your practiced queries.")
 
 # -------------------- load topics/questions into session --------------------
 TOPICS_PATH = Path(__file__).parent / "topics" / "questions.json"
