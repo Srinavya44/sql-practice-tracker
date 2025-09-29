@@ -1,0 +1,458 @@
+{
+  "Basics": [
+    {
+      "title": "Show all columns for all employees",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Show the name and email of all employees",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "List all department names and their locations",
+      "target_tables": [
+        "departments"
+      ]
+    },
+    {
+      "title": "Show all orders sorted by order_date descending",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Show employee id and name for employees with salary > 50000",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "List distinct employee department ids present in employees table",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Show top 5 highest salary employees (id, name, salary)",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Show orders where status = 'Pending'",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Show employees hired after 2020-01-01",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Show customers who made orders with amount > 1000",
+      "target_tables": [
+        "orders"
+      ]
+    }
+  ],
+  "Filtering & Sorting": [
+    {
+      "title": "Employees in dept_id = 1 (IT)",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Orders with amount between 500 and 1500",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Employees whose name starts with 'A'",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Orders in May 2024",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Employees with salary <= 45000 sorted ascending",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Orders with status 'Completed' sorted by amount desc",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Employees whose email contains 'example.com'",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Orders where employee_id IS NULL (unassigned)",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Employees hired in 2022",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Top 3 customers by order amount in 2024",
+      "target_tables": [
+        "orders"
+      ]
+    }
+  ],
+  "Aggregations": [
+    {
+      "title": "Average salary by department id",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Count of employees in each department",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Total order amount by employee_id",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Count of orders per status",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Departments having more than 2 employees",
+      "target_tables": [
+        "employees",
+        "departments"
+      ]
+    },
+    {
+      "title": "Maximum and minimum salary across all employees",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Average order amount per month",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Sum of order amounts by customer_name (top customers)",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Count of orders by employee for employees with > 1 order",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Average salary of employees hired before 2020",
+      "target_tables": [
+        "employees"
+      ]
+    }
+  ],
+  "Joins": [
+    {
+      "title": "List employees with their department name (inner join)",
+      "target_tables": [
+        "employees",
+        "departments"
+      ]
+    },
+    {
+      "title": "List all departments and employees (including departments with no employees) \u2014 left join",
+      "target_tables": [
+        "departments",
+        "employees"
+      ]
+    },
+    {
+      "title": "Show orders with the employee name who handled them",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "List customers and the dept_name of the employee who served them (if any)",
+      "target_tables": [
+        "orders",
+        "employees",
+        "departments"
+      ]
+    },
+    {
+      "title": "Find employees who handled orders > 1000",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "Departments with total sales amount (sum of order amounts by employees in that dept)",
+      "target_tables": [
+        "departments",
+        "employees",
+        "orders"
+      ]
+    },
+    {
+      "title": "Employees with zero orders (no matching rows in orders)",
+      "target_tables": [
+        "employees",
+        "orders"
+      ]
+    },
+    {
+      "title": "Join employees to orders and show employee name, order_id, amount for last 5 orders",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "For each department, show the highest-paid employee",
+      "target_tables": [
+        "departments",
+        "employees"
+      ]
+    },
+    {
+      "title": "Orders and department (via employee) where amount > 500",
+      "target_tables": [
+        "orders",
+        "employees",
+        "departments"
+      ]
+    }
+  ],
+  "Subqueries & CTEs": [
+    {
+      "title": "Show employees earning more than the overall average salary",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Employees whose salary is above the average salary of their department",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Orders where amount > (average order amount)",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Find employees who handled orders and whose salary is less than the average of employees who handled orders",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "Show customers who ordered more than the average order amount last month",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Using a CTE: list employee_id and their total order amount, then select top 5",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "Find departments where max salary > 70000",
+      "target_tables": [
+        "departments",
+        "employees"
+      ]
+    },
+    {
+      "title": "Find the most recent order per customer",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Employees whose salary equals the minimum salary in the company",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Using CTE: compute monthly totals and then show months where totals > 2000",
+      "target_tables": [
+        "orders"
+      ]
+    }
+  ],
+  "String & Date functions": [
+    {
+      "title": "Extract year from employees.hire_date and show hires per year",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Show employee name and domain of their email (substring)",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Orders older than 90 days",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Format order_date as 'YYYY-MM' and show monthly sales",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Employees with names in uppercase (use UPPER function to compare)",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Find customers whose name contains 'Co' (LIKE %Co%)",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Concatenate employee name and email into one column",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Show employees with hire_date within last 2 years",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Use REPLACE to remove 'example' from email for display",
+      "target_tables": [
+        "employees"
+      ]
+    },
+    {
+      "title": "Show orders where order_date falls on weekend (approx)",
+      "target_tables": [
+        "orders"
+      ]
+    }
+  ],
+  "Window & Advanced": [
+    {
+      "title": "For each department, list employees and their salary rank within department",
+      "target_tables": [
+        "employees",
+        "departments"
+      ]
+    },
+    {
+      "title": "Compute running total of order amounts ordered by order_date",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Show each employee and the total order amount they handled (SUM OVER partition)",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "Partition orders by customer_name and show row_number per customer",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Show moving average of order amounts over a 3-order window",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "For each department, show average salary and each salary's difference from dept average",
+      "target_tables": [
+        "employees",
+        "departments"
+      ]
+    },
+    {
+      "title": "Use ROW_NUMBER to pick latest order per customer",
+      "target_tables": [
+        "orders"
+      ]
+    },
+    {
+      "title": "Rank employees by total sales using window functions",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "Show cumulative percentage of sales by employee ordered by total",
+      "target_tables": [
+        "orders",
+        "employees"
+      ]
+    },
+    {
+      "title": "Show previous order amount for each employee using LAG",
+      "target_tables": [
+        "orders"
+      ]
+    }
+  ]
+}
